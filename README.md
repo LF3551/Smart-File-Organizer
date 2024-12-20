@@ -43,4 +43,4 @@
 
 ## License
 
-This project is open-sourced under the Universal Permissive License (UPL), Version 1.0. See the [LICENSE](LICENSE) file for more details.
+This project is open-sourced under the Universal Permissive License (UPL), Version 1.0. See the LICENSE file for more details.
