@@ -13,8 +13,10 @@ def organize_files(directory):
     }
 
     if not os.path.exists(directory):
-        print(f"Error: Directory '{directory}' does not exist.")
+        logging.error(f"Error: Directory '{directory}' does not exist.")
         return
+
+
 
     for filename in os.listdir(directory):
         filepath = os.path.join(directory, filename)

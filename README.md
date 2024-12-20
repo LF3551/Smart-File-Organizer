@@ -15,21 +15,30 @@
    cd SmartFileOrganizer
    ```
 
-2. Create and activate a virtual environment:
+
+## Usage
+
+### Organizing Files
+1. Prepare a folder with files to organize. For example:
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On macOS/Linux
-   venv\Scripts\activate   # On Windows
+   mkdir test_files
+   touch test_files/document.pdf test_files/image.jpg test_files/song.mp3 test_files/video.mp4 test_files/archive.zip test_files/unknown_file.xyz
    ```
 
-3. Install required dependencies (if any):
+2. Run the script to organize the files:
    ```bash
-   pip install -r requirements.txt
+   python main.py --directory test_files
    ```
 
-4. Run the script:
-   ```bash
-   python main.py --directory /path/to/your/directory
+3. After execution, the files will be sorted into subfolders like `Documents`, `Images`, `Audio`, etc.
+   Example output:
+   ```plaintext
+   Moved: document.pdf -> Documents/
+   Moved: unknown_file.xyz -> Others/
+   Moved: video.mp4 -> Videos/
+   Moved: archive.zip -> Archives/
+   Moved: image.jpg -> Images/
+   Moved: song.mp3 -> Audio/
    ```
 
 ## License
