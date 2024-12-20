@@ -1,3 +1,7 @@
+# Smart File Organizer is open-sourced under the Universal Permissive License (UPL), Version 1.0
+# See the LICENSE file in the repository for more details.
+
+
 import unittest
 import os
 from tempfile import TemporaryDirectory
